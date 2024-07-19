@@ -1,0 +1,163 @@
+.dashboardpage {
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 14px 21px 14px 21px;
+    border-bottom: 1px solid #f1f3f9;
+    .headname {
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+
+  .dashboardcontainer {
+    padding: 28px 19px 28px 19px;
+    position: relative;
+    z-index: 99999999999;
+    background-color: #F1F3F9;
+    .sub {
+      display: grid;
+      gap: 2%;
+      @media (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+    .subone {
+      grid-template-columns: 29% 29% 38%;
+    }
+    .subtwo {
+      grid-template-columns: 60% 38%;
+      padding-top: 20px;
+      .marketingchart-status {
+        display: grid;
+        grid-template-columns: 48.5% 48.5%;
+        justify-content: space-between;
+        @media (max-width:767px) {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .marketing {
+          background-color: #fff;
+          border-radius: 12px;
+          .marketing-head {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 20px 0px 20px;
+            .heading {
+              font-size: 16px;
+              font-weight: 500;
+            }
+            select {
+              font-size: 12px;
+              border: none;
+              color: #bec0ca;
+              background: white;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+
+      .summary {
+        margin-top: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 20px 20px 30px 20px;
+        .head-wrapper {
+            display: flex;
+            align-items: center;
+            padding-bottom: 30px;
+          .heading {
+            line-height: 19.36px;
+            font-size: 16px;
+            padding-right: 21px;
+            font-weight: 500;
+          }
+          .salesselect {
+            background-color: #5570f114;
+            color: #5570f1;
+            padding: 5px 12px;
+            font-size: 14px;
+            line-height: 16.9px;
+            border: none;
+            padding-right: 20px;
+            border-radius: 30px;
+          }
+          .daysselect {
+            font-size: 12px;
+            border: none;
+            color: #1C1D22;
+            background: white;
+            margin-left: auto;
+            padding-right: 10px;
+          }
+        }
+      }
+
+      .recentorders {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        .heading {
+          padding-bottom: 23px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19.36px;
+        }
+        .recentorder-lists {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        .orderlist-wrapper {
+          padding-bottom: 12px;
+          border-bottom: 1px solid #f1f3f9;
+          display: flex;
+          gap: 14px;
+          align-items: center;
+          .img-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+          }
+          .name-price {
+            font-size: 14px;
+            line-height: 16.94px;
+            color: #45464e;
+            .price {
+              font-weight: 500;
+              padding-top: 10px;
+            }
+          }
+          .date-status {
+            font-size: 12px;
+            line-height: 14.52px;
+            .date {
+              color: #a6a8b1;
+            }
+            .status {
+              padding: 2px 15px;
+              border-radius: 8px;
+              color: #519c66;
+              background-color: #32936f1f;
+              margin-top: 10px;
+              &.red {
+                background-color: #f57e771f;
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

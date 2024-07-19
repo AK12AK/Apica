@@ -1,0 +1,94 @@
+.navcontainer {
+  height: 100vh;
+  background-color: #fff;
+  .brandlogo {
+    display: flex;
+    align-items: center;
+    gap: 3.5px;
+    padding-bottom: 66.33px;
+    padding-top: 18.33px;
+    padding-left: 10px;
+    .logoname {
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+  padding: 0px 33px;
+  .listcontainer {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    padding-bottom: 352px;
+    .navlist {
+      padding: 16px 0px 16px 20px;
+      gap: 1rem;
+    }
+    li.active .navlist {
+      background-color: #5570f1;
+      border-radius: 12px;
+      color: #ffff;
+    }
+  }
+  .navlist {
+    display: flex;
+    gap: 12px;
+    width: 233px;
+    align-items: center;
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.94px;
+      text-align: center;
+    }
+    .number {
+      background: #ffcc91;
+      font-size: 12px;
+      border-radius: 54px;
+      &.one {
+        padding: 3px 5.8px;
+      }
+      &.two {
+        padding: 4px 3.8px;
+      }
+    }
+  }
+  .navbottom {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    border-radius: 16px;
+    .support {
+      width: 232px;
+      padding: 11px 0px 11px 16px;
+      border-radius: 16px;
+      background: #5e63661a;
+      cursor: pointer;
+    }
+    .giftcontainer {
+      width: 232px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 11px 0px 11px 16px;
+      background: #ffcc9133;
+      border-radius: 16px;
+      cursor: pointer;
+      .upgrade p {
+        font-size: 12px;
+      }
+    }
+    .logout {
+      cursor: pointer;
+      color: red;
+      display: flex;
+      gap: 8px;
+      padding: 11px 0px 11px 16px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.appcontainer {
+  background-color: #5570F114;
+  // max-width: 1440px;
+  margin: auto;
+  height: 100vh;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: inter;
+  color: #45464E;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

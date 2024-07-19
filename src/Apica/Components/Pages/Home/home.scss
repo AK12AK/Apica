@@ -1,0 +1,49 @@
+.nav-pages {
+  display: flex;
+  .pages {
+    width: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+}
+
+.nav-pages {
+  position: relative;
+}
+
+.hamburger-icon {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    top: 15px;
+    display: block;
+    font-weight: bolder;
+    background: #80808033;
+  }
+}
+.pages {
+    &.none {
+        display: none;
+    }
+}
+.navbar-wrapper {
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &.visible {
+    display: block;
+  }
+}
+
